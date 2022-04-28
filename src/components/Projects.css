@@ -1,0 +1,7 @@
+.ProjectsContainer {
+    height: 600px;
+    background-color: #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

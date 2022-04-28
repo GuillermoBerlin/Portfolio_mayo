@@ -1,0 +1,21 @@
+.AboutMeContainer {
+    background-image: url(../../public/layered-peaks-haikei\ \(1\).png);
+    height: 600px;
+    background-size: contain;
+    border-color: rgb(230, 48, 48) 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.AboutMeTexts {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: whitesmoke;
+}
+
+.AboutMePicture {
+    color: whitesmoke
+}
+
