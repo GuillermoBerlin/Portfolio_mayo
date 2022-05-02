@@ -2,6 +2,10 @@
     height: 600px;
     background-image: url(../../public/background_1.jpg);
     background-size: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
     border-color: rgb(230, 48, 48) 6px;
     display: flex;
     align-items: center;
@@ -27,3 +31,19 @@
     font-size: 30px;
     margin: 5px;
 }
+
+@media screen and (max-width: 960px) {
+    .text {
+       padding-left: 10px; 
+    }
+    
+    .text h1 {
+        font-size: 50px;
+        margin: 5px;
+    }
+    
+    .text h3 {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+}    

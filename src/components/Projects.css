@@ -1,5 +1,6 @@
 .ProjectsContainer {
     height: 600px;
+    width: 100%;
     background-color: #464646;
     display: flex;
     justify-content: center;
