@@ -5,7 +5,7 @@ import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-
+  
   const handleClick = () => setClick(!click);
   return (
     <>
@@ -23,6 +23,7 @@ function NavBar() {
                 activeClassName="active"
                 smooth={true}
                 duration={1000}
+                offset={-80}
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -35,6 +36,7 @@ function NavBar() {
                 to="about_me"
                 smooth={true}
                 duration={1000}
+                offset={-80}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -48,6 +50,7 @@ function NavBar() {
                 to="projects_"
                 smooth={true}
                 duration={1000}
+                offset={-80}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}

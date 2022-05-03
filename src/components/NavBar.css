@@ -78,6 +78,7 @@
   }
   
   @media screen and (max-width: 960px) {
+  
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -90,7 +91,7 @@
       transition: all 0.5s ease;
       margin-top: 0px;
       height: 500px;
-      justify-content: center;
+      justify-content: space-evenly;
     }
   
     .nav-menu.active {
@@ -101,12 +102,25 @@
       z-index: 1;
       margin-top: 0px;
       height: 500px;
-      justify-content: center;
+      justify-content: space-evenly;
+      padding: 0px;
+      
+
       
     }
    
+    .nav-item {
+      
+      margin-right: 0px;
+    }
+
+    .nav-logo {
+      font-size: 25px;
+    }
+
+
     .nav-links {
-      padding: 1.5rem;
+      padding: 0px;
       width: 100%;
       display: table;
       color: whitesmoke;
@@ -114,11 +128,12 @@
     }
 
     .nav-links-contact {
-      padding: 1.5rem;
+      padding: 0px;
       width: 100%;
       display: table;
       color: #ffdd40;
       font-size: 25px;
+      
     }
 
 
