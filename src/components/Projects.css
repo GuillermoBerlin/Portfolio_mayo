@@ -1,8 +1,13 @@
 .ProjectsContainer {
-    height: 600px;
+    height: 300px;
     width: 100%;
-    background-color: #464646;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.un_h1 {
+    color: rgba(0, 0, 0, 0.89);
 }

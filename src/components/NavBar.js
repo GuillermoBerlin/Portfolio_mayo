@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./NavBar.css";
 
 function NavBar() {
@@ -16,44 +17,50 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
-                to="/"
+                to="home_"
                 activeClassName="active"
+                smooth={true}
+                duration={1000}
                 className="nav-links"
                 onClick={handleClick}
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
-                to="/about"
+                to="about_me"
+                smooth={true}
+                duration={1000}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 About me
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
-                to="/blog"
+                to="projects_"
+                smooth={true}
+                duration={1000}
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Projects
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
                 to="/contact"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links-contact"
                 onClick={handleClick}
               >
                 Contact 
