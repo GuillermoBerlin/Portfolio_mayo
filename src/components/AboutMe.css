@@ -1,9 +1,10 @@
 .AboutMeContainer {
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(23, 23, 23);
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-evenly; 
+    
 }
 
 .AboutMeTexts {

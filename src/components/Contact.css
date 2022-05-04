@@ -1,0 +1,49 @@
+
+.ContactContainer {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(23, 23, 23);
+    /*margin-top: 80px;
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-evenly; 
+    padding-top: 20px;
+    
+}
+
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact_right {
+    flex-direction: column;
+}
+
+.elementos_left {
+    width: 400px;
+    height: 60px;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+.iconos {
+    padding-right: 15px;
+    color: whitesmoke;
+    
+}

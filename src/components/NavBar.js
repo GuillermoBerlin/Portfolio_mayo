@@ -59,15 +59,18 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
-                to="/contact"
+                to="contact_"
+                smooth={true}
+                duration={1000}
+                offset={-80}
                 activeClassName="active"
                 className="nav-links-contact"
                 onClick={handleClick}
               >
                 Contact 
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
