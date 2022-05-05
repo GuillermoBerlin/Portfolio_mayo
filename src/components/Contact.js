@@ -17,10 +17,22 @@ function Contact() {
                 <div className='elementos_left'><div className="iconos"><MdPlace /></div>Berlin, Germany</div>
             </div>
             <div className="contact_right">
-            <h1>A</h1>
-            <h1>A</h1>
-            <h1>A</h1>
-            <h1>A</h1>
+            <form>
+                <div className='form'>
+                    <label>Name</label>
+                    <input type="text" className='input_'/>
+                </div>    
+                <div className='form'>
+                    <label>Email</label>
+                    <input type="text" className='input_'/>
+                </div>  
+                <div className='form_message'>
+                    <label>Message</label>
+                    <input type="text" className='input_menssage' />
+                    
+                </div>  
+                   
+            </form>
         </div>
         </div>
 

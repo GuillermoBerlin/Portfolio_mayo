@@ -25,10 +25,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 250px;
+    
 }
 
 .contact_right {
+    display: block;
     flex-direction: column;
+    height: 400px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    font-size: 20px;
+}
+
+.form_message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    font-size: 20px;
+}
+
+.input_ {
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 50px;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 0px;
+    border: none;
+    font-size: 20px;
+}
+
+.input_menssage {
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 250px;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 0px;
+    border: none;
 }
 
 .elementos_left {

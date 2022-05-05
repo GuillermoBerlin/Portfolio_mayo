@@ -4,16 +4,31 @@
     background-size: 100%; 
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: center;
-    border-color: rgb(230, 48, 48) 6px;
+    width: 100%;
+    /*max-width: 1500px;*/
+    display: flex;
+    justify-content: center;
+
+}   
+    
+ .container2 {
+    height: 600px;
+    width: 100%;
+    max-width: 1500px;
     display: flex;
     align-items: center;
-}
+    
+
+ }   
+
+    
+       
+    
 
 .text {
     
-    /*padding-left: 40px;*/
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     color: rgba(0, 0, 0, 0.89);
@@ -33,10 +48,8 @@
 }
 
 @media screen and (max-width: 960px) {
-    .text {
-       padding-left: 10px; 
-    }
-    
+  
+   
     .text h1 {
         font-size: 50px;
         margin: 5px;
