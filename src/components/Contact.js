@@ -28,7 +28,7 @@ function Contact() {
                 </div>  
                 <div className='form_message'>
                     <label>Message</label>
-                    <input type="text" className='input_menssage' />
+                    <textarea type="text" className='input_menssage' />
                     
                 </div>  
                    

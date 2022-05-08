@@ -14,7 +14,7 @@ function App() {
       <Cover />
       <AboutMe />
       <Projects />
-      
+      <Contact />
     </Router>  
     </div>
   );
