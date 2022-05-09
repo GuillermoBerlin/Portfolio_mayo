@@ -12,12 +12,15 @@
     text-align: center;
     padding-top: 20px;
     
+    
 }
 
 .contact_content {
     display: flex;
     justify-content: space-evenly; 
+    height: 650px;
     padding-top: 20px;
+    
     
 }
 
@@ -26,6 +29,10 @@
     flex-direction: column;
     justify-content: space-around;
     height: 250px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 35px;
+
     
 }
 
@@ -48,31 +55,48 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 200px;
     font-size: 20px;
 }
 
 .input_ {
     width: 400px;
-    background-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
     border-radius: 10px;
     height: 50px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-left: 0px;
     border: none;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .input_menssage {
     width: 400px;
-    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: whitesmoke;
     border-radius: 10px;
     height: 250px;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-left: 0px;
     border: none;
+}
+
+.boton {
+    color: rgb(0, 0, 0);
+    background-color: #ffdd40;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 50%;
 }
 
 .elementos_left {
@@ -109,5 +133,33 @@
 
     .elementos_left {
         width: 90%;
-    }        
+    }      
+    
+    .form {
+        margin-left: 13px;
+    }
+
+    .form_message {
+        margin-left: 13px;
+    }
+
+    .contact_left {
+        height: 180px;
+        margin-left: 13px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        width: 85%;
+    }
+
+    .contact_content {
+       
+        padding-top: 0px;
+        height: 850px;
+        justify-content: flex-start; 
+    }
+
+    .ContactContainer {
+    height: 1000px;
+    
+    }
 }

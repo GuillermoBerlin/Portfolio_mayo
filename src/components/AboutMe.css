@@ -20,10 +20,11 @@
 .AboutMeTexts {
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 600px;
     max-width: 600px;
     color: whitesmoke;
     margin-left: 80px;
+    
     
 }
 
@@ -55,8 +56,8 @@
     .AboutMeTexts {
          
          margin-top: 60px;
-         width: 70%;
-         margin-left: 70px;
+         width: 80%;
+         margin-left: 40px;
         
          
     }
@@ -64,8 +65,8 @@
         height: 250px;
         margin: 0px;
         padding-right: 0px; 
-        margin-bottom: 80px;
-        margin-left: 70px;
+        margin-bottom: 50px;
+        margin-left: 40px;
         margin-top: 40px;
     }       
 }    
