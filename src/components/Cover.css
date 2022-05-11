@@ -35,18 +35,20 @@
 }
 
 .text h1 {
-    font-size: 70px;
+    font-size: 85px;
     margin: 5px;
     margin-left: 0px;
-    
-    
-    
+    letter-spacing: 2px
+      
 }
 
 .text h3 {
     font-size: 30px;
+    font-weight: 100;
     margin: 5px;
     margin-left: 0px;
+    padding-left: 2px;
+    letter-spacing: 3px
 }
 
 @media screen and (max-width: 960px) {
@@ -56,13 +58,15 @@
     }
 
     .text h1 {
-        font-size: 50px;
+        font-size: 55px;
         margin: 5px;
         margin-left: 0px;
+        width: 300px;
     }
     
     .text h3 {
-        font-size: 20px;
+        font-size: 23px;
         margin-top: 3px;
+        letter-spacing: 0px
     }
 }    
