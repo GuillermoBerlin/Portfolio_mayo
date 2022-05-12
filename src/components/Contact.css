@@ -97,6 +97,7 @@
     cursor: pointer;
     border: none;
     width: 50%;
+    font-weight: bold;
 }
 
 .elementos_left {
