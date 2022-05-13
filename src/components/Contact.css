@@ -3,11 +3,6 @@
     width: 100%;
     height: 800px;
     background-color: rgb(23, 23, 23);
-    /*margin-top: 80px;
-    position: fixed;
-    z-index: -2;
-    top: 0;
-    left: 0;*/
     color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 20px;
@@ -98,6 +93,33 @@
     border: none;
     width: 50%;
     font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}
+
+.enviado {
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 226, 67);
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.cosito {
+    height: 40px;
+    
 }
 
 .elementos_left {

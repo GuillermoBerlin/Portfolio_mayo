@@ -1,20 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./Contact.css";
 import { BsTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { MdPlace } from 'react-icons/md';
+import { FaCheck } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 
 
 function Contact() {
 
+    const [click, setClick] = useState(false);
+  
+    const handleClick = () => setClick(!click);
+
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_9gxaxrz', 'template_asddxgw', form.current, 'QHrkOSHRALGIK7BA_')
+    emailjs.sendForm('service_9gxaxrz', 'template_asddxgw', form.current, 'QHrkOSHRALGIK7BA_')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -47,8 +52,11 @@ function Contact() {
                 <div className='form_message'>
                     <label>Message</label>
                     <textarea name="message" className='input_menssage' />
-                    <button type="submit" value="Send" className="boton">SEND</button>
+                    <button type="submit" value="Send" className={click ? "escondido" : "boton"} onClick={handleClick}>SEND</button>
                 </div>  
+                <div className={click? "enviado" : "escondido"}>
+                    <FaCheck className="cosito" />
+                </div>
                    
             </form>
         </div>
