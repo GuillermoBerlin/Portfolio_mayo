@@ -157,6 +157,8 @@
       font-size: 1.8rem;
       cursor: pointer;
       color: #ffdd40;
+      margin-top: 4px;
+      margin-right: 8px;
     }
 
   .fas fa-code {

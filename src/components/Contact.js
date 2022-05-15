@@ -22,6 +22,7 @@ function Contact() {
     emailjs.sendForm('service_9gxaxrz', 'template_asddxgw', form.current, 'QHrkOSHRALGIK7BA_')
         .then((result) => {
             console.log(result.text);
+            handleClick();
         }, (error) => {
             console.log(error.text);
         });
@@ -52,7 +53,7 @@ function Contact() {
                 <div className='form_message'>
                     <label>Message</label>
                     <textarea name="message" className='input_menssage' />
-                    <button type="submit" value="Send" className={click ? "escondido" : "boton"} onClick={handleClick}>SEND</button>
+                    <button type="submit" value="Send" className={click ? "escondido" : "boton"} >SEND</button>
                 </div>  
                 <div className={click? "enviado" : "escondido"}>
                     <FaCheck className="cosito" />
