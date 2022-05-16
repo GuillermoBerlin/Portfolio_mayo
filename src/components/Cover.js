@@ -13,8 +13,8 @@ function Cover() {
           <h1>Hi! I'm Guillermo</h1>
           <h3> Full Stack Web Developer</h3>
           <div className="iconitos">
-          <BsGithub className="git" size={30}/> 
-          <BsLinkedin className="linkedin" size={30}/>
+          <a href="https://github.com/GuillermoBerlin" target="_blank"><BsGithub className="git" size={30}/></a> 
+          <a href="https://www.linkedin.com/in/guillermo-lescano/" target="_blank"><BsLinkedin className="linkedin" size={30}/></a>
           </div>
         </div>
       </div>  
