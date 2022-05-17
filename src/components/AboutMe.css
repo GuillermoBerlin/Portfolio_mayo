@@ -9,7 +9,7 @@
 .AboutMeContainer2 {
     height: 600px;
     display: flex;
-    align-items: center;
+    
     justify-content: space-between; 
     width: 100%;
     max-width: 1400px;
@@ -24,12 +24,15 @@
     max-width: 600px;
     color: whitesmoke;
     margin-left: 80px;
+    margin-top: 80px;
+   
     
     
 }
 
 .AboutMePicture {
     height: 350px;
+    margin-top: 90px;
     margin-right: 100px;
     margin-left: 60px;
     box-shadow: 8px 8px black;

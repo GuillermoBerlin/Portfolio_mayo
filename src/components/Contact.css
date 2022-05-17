@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100px;
+    height: 90px;
     font-size: 20px;
 }
 
@@ -86,7 +86,7 @@
     margin: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 20px;
+    margin-top: 4px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -99,26 +99,33 @@
     display: none;
 }
 
+.cubo {
+    height: 40px;
+    width: 30px;
+    
+}
+
+ 
+
 .enviado {
-    color: rgb(255, 255, 255);
-    background-color: rgb(67, 226, 67);
+    color: rgb(67, 226, 67);
+    background-color: rgba(67, 226, 67, 0);
     margin: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 0;
     border-radius: 10px;
-    width: 50px;
+    width: 220px;
     height: 20px;
-    font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
     
 }
 
 .cosito {
     height: 40px;
+    padding-left: 5px;
     
 }
 
@@ -188,7 +195,5 @@
     
     }
 
-    .enviado {
-        margin-left: 13px;
-    }
+    
 }

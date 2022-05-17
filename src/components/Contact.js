@@ -53,11 +53,15 @@ function Contact() {
                 <div className='form_message'>
                     <label>Message</label>
                     <textarea name="message" className='input_menssage' />
-                    <button type="submit" value="Send" className={click ? "escondido" : "boton"} >SEND</button>
-                </div>  
                 <div className={click? "enviado" : "escondido"}>
-                    <FaCheck className="cosito" />
+                    <p>Message sent</p><FaCheck className="cosito" />
                 </div>
+                <div className={click? "escondido" : "cubo"}>
+                    
+                </div>
+                    <button type="submit" value="Send" className="boton" >SEND</button>
+                </div>  
+                
                    
             </form>
         </div>
