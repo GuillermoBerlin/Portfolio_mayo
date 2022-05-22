@@ -1,26 +1,29 @@
 import React, { useState } from "react";
-import { NavLink, } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  
   const handleClick = () => setClick(!click);
+  
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <Link to="home_" 
+                className="nav-logo"
+                smooth={true}
+                duration={1000}
+                offset={-80}
+          >
             Guillermo Lescano   
-          </NavLink>
+          </Link>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                exact
+                
                 to="home_"
-                activeClassName="active"
                 smooth={true}
                 duration={1000}
                 offset={-80}
@@ -32,12 +35,11 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-                exact
+                
                 to="about_me"
                 smooth={true}
                 duration={1000}
                 offset={-80}
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -46,12 +48,11 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-                exact
+                
                 to="projects_"
                 smooth={true}
                 duration={1000}
                 offset={-80}
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -60,12 +61,11 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <Link
-                exact
+                
                 to="contact_"
                 smooth={true}
                 duration={1000}
                 offset={-80}
-                activeClassName="active"
                 className="nav-links-contact"
                 onClick={handleClick}
               >
