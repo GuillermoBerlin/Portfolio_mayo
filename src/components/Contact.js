@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 import { MdPlace } from 'react-icons/md';
 import { FaCheck } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 function Contact() {
@@ -14,6 +14,11 @@ function Contact() {
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     
+
+    let validCaptcha = false;
+    const validateCaptcha = () => {
+        validCaptcha = true
+    }
 
     const handleChange = (e) => { 
         const { name, value } = e.target;
@@ -50,7 +55,7 @@ function Contact() {
     const submitForm = (e) => {
         e.preventDefault();
         const algo = validate(formValues)
-            if ( Object.keys(algo).length === 0) {
+            if ( Object.keys(algo).length === 0 && validCaptcha) {
             sendEmail(e)
             }else {
             setFormErrors(validate(formValues));
@@ -123,7 +128,11 @@ function Contact() {
                         <div className={click? "escondido" : "cubo"}>
                         </div>
                         <button type="submit" value="Send" className="boton" >SEND</button>
-                    </div>  
+                    </div> 
+                    <ReCAPTCHA
+                        sitekey="6LfLzBcgAAAAAMkmar7TQ0njxYq1Na8mksZXcYKV"
+                        onChange={validateCaptcha}
+                    /> 
                 </form>
             </div>
         </div>
