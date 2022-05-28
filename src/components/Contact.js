@@ -72,6 +72,7 @@ function Contact() {
                 console.log(error.text);
             });
             setFormValues(initialValues);
+            setFormErrors({});
     }
      
     
@@ -129,10 +130,12 @@ function Contact() {
                         </div>
                         <button type="submit" value="Send" className="boton" >SEND</button>
                     </div> 
+                    <div className='captcha'>
                     <ReCAPTCHA
                         sitekey="6LfLzBcgAAAAAMkmar7TQ0njxYq1Na8mksZXcYKV"
                         onChange={validateCaptcha}
                     /> 
+                    </div>
                 </form>
             </div>
         </div>

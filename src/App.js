@@ -4,6 +4,7 @@ import Cover from "./components/Cover";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from './components/Contact';
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <AboutMe />
       <Projects />
       <Contact />
+      <Footer />
     </Router>  
     </div>
   );
